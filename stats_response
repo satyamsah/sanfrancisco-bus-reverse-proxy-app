@@ -1,20 +1,20 @@
 {
    "slow_requests":{
-      "/app/vehicleLocation/":0.0029,
-      "/app/predictionByStopId/":0.0053,
-      "/app/predictionsForMultiStops/":0.0029,
-      "/app/schedule/":0.0035,
-      "/app/predictionByStopTag/":0.0021,
-      "/app/routeList/":0.0022,
-      "/app/routeConfig/":0.0027
+      "/app/predictionByStopId/":"0.0022s",
+      "/app/routeConfig/":"0.0024s",
+      "/app/vehicleLocation/":"0.0137s",
+      "/app/routeList/":"0.0023s",
+      "/app/predictionByStopTag/":"0.0023s",
+      "/app/schedule/":"0.0162s",
+      "/app/predictionsForMultiStops/":"0.0207s"
    },
    "queries":{
-      "/app/vehicleLocation/":2,
       "/app/predictionByStopId/":2,
-      "/app/predictionsForMultiStops/":2,
-      "/app/schedule/":2,
-      "/app/predictionByStopTag/":4,
+      "/app/routeConfig/":2,
+      "/app/vehicleLocation/":2,
       "/app/routeList/":2,
-      "/app/routeConfig/":2
+      "/app/predictionByStopTag/":4,
+      "/app/schedule/":2,
+      "/app/predictionsForMultiStops/":2
    }
 }
