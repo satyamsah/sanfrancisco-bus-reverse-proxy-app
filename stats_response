@@ -1,0 +1,22 @@
+{
+   "slow_requests":{
+      "/app/agencyList/":1,
+      "/app/routeList/":1,
+      "/app/routeConfig/":1,
+      "/app/predictionByStopId/":1,
+      "/app/predictionByStopTag/":2,
+      "/app/predictionsForMultiStops/":1,
+      "/app/schedule/":1,
+      "/app/vehicleLocation/":1
+   },
+   "queries":{
+      "/app/agencyList/":0.28,
+      "/app/routeList/":0.22,
+      "/app/routeConfig/":0.22,
+      "/app/predictionByStopId/":0.25,
+      "/app/predictionByStopTag/":0.22,
+      "/app/predictionsForMultiStops/":0.23,
+      "/app/schedule/":0.89,
+      "/app/vehicleLocation/":0.21
+   }
+}
