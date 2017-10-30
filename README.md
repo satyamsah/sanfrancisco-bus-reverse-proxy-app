@@ -1,6 +1,6 @@
 # sanfrancisco-bus-reverse-proxy-app"
 
-![alt text](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/workflowdiagram.PNG)
+![alt text](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/workflows.png)
 
 clone the repo:
 
