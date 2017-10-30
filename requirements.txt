@@ -1,0 +1,6 @@
+flask
+requests
+xmltodict
+requests_cache
+
+
