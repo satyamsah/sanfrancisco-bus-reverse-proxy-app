@@ -13,9 +13,9 @@ python and related libraries: reverse-proxy service
 
 sqlite db : cache
 
-dockerfile and docker-compose : to start the reverse-proxy service
+dockerfile and docker-compose : one way to start the reverse-proxy service
 
-shell scripts : to start and test the service
+shell scripts : second way to start he reverse-proxy service and test the service
 
 
 
