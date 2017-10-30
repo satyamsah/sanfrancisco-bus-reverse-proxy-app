@@ -8,4 +8,4 @@ sudo pip install -y --upgrade pip
 sudo pip install -y --upgrade virtualenv 
 pip install -r requirements.txt
 sudo chown -R $USER: .
-python3 proxy-net.py
+python proxy-net.py
