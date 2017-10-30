@@ -1,6 +1,6 @@
 # sanfrancisco-bus-reverse-proxy-app
 
-![alt text](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/workflows.png)
+![alt text](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/workflowdigram.png)
 
 clone the repo:
 
@@ -53,9 +53,9 @@ Sample result [stats_response.txt](https://github.com/satyamsah/sanfrancisco-bus
 http://localhost:5002/app/routeList/agencytag/actransit
 
 
-### Http calls to server (Not a part of execution) and concept of cache:
+### Http calls to server and concept of cache using SQLLite DB:
 
-As shown in the diagram ,for the first time just after the service has started up, http call wont be using the cache. After that, if the user hits exactly same uri with same values, within 40 secs, the reponse would be fetched from 'Local SQLLite DB'.After 40 seconds, the http request will call the server over the wire. It is very obvious that the cache has made the retrival of information massively fast. The time out of the cache is 40 seconds.
+As shown in the diagram ,for the first time just after the service has started up, http call wont be using the cache. After that, if the user hits exactly same uri with same values, within 40 secs, the reponse would be fetched from 'Local SQLLite DB'.After 40 seconds, the http request will call the server over the wire. It is very obvious that the cache has made the retrival of information massively fast. It usually takes .20 to .5 seconds to get a response from http calls to enpoint server, but it takes less than .0005 seconds to fetch the saved response from the 'SQLLite cache db'. The time out of the cache is 40 seconds. 
 
 
 
