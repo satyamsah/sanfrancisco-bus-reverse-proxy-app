@@ -7,6 +7,8 @@ I have a reverse proxy service that is a python file " proxy-net.py " which does
 
 The technology used are :
 
+ubuntu : OS
+
 python and related libraries: reverse-proxy service
 
 sqlite db : cache
@@ -34,6 +36,7 @@ shell scripts : to start and test the service
 keep the terminal open to see the log 
 
 ##### 2) using docker-compose
+docker should be installed as a pre-requisite
 
 `sudo docker-compose up`
 
