@@ -1,6 +1,6 @@
 # sanfrancisco-bus-reverse-proxy-app
 
-![alt text](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/workflowdigram.png)
+![alt text](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/workflowdia.png)
 
 clone the repo:
 
@@ -27,7 +27,7 @@ keep the terminal open to see the log
 
 #### test the project (open a new terminal):
 
-This is a test.sh file which calls different curl command against server proxy endpoints.It shows whether thestate the endpoint queried :
+This is a test.sh file which calls different curl commands against server proxy endpoints.It shows  the state the endpoint queried (live or not live):
 
 `chmod 777 test.sh`
 
