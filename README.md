@@ -13,6 +13,7 @@ clone the repo:
 ##### 1) using build.sh
 
 `chmod 777 build.sh`
+
 `./build.sh`
 
 keep the terminal open to see the log 
@@ -29,6 +30,7 @@ keep the terminal open to see the log
 This is a test.sh file which calls different curl command against server proxy endpoints.It shows whether thestate the endpoint queried :
 
 `chmod 777 test.sh`
+
 `./test.sh`
 
 The sample result of tag can be found in the file [test_result.txt](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/test_result.txt)
