@@ -72,7 +72,7 @@ http://localhost:5002/app/routeList/agencytag/actransit
 
 ### Http calls to server and concept of cache using SQLite DB:
 
-As shown in the diagram ,for the first time just after the service has started up, http call wont be using the cache. After that, if the user hits exactly same uri with same values, within 40 secs, the reponse would be fetched from 'Local SQLite DB'.After 40 seconds, the http request will call the server over the wire. It is very obvious that the cache has made the retrival of information massively fast. It usually takes .20 to .5 seconds to get a response from http calls to enpoint server, but it averagely takes less than .0022 to .0045 seconds to fetch the saved response from the 'SQLite cache db'. The time-out of the cache is 40 seconds and then the request would be sent to the nextbus server. 
+As shown in the diagram ,for the first time after the reverse-proxy-service has started up, the request  won't be using the cache. But, after the first call, if the user hits exactly same uri with same values, within 40 secs, the response would be fetched from 'Local SQLite DB'. I set the time-out of the cache as 40 seconds. After 40 seconds, the http request will call the sf-bus-server over the wire. It is very obvious that the cache has made the retrival of information massively fast. It usually takes .20 to .5 seconds to get a response from http calls to enpoint sf-bus-server, but it averagely takes less than .0022 to .0045 seconds to fetch the saved response from the 'SQLite cache db'.
 
 
 
