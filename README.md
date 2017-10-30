@@ -31,7 +31,7 @@ This is a test.sh file which calls different curl command against server proxy e
 `chmod 777 test.sh`
 `./test.sh`
 
-The sample result of tag can be found in the file [test_result.txt)](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/test_result.txt)
+The sample result of tag can be found in the file [test_result.txt](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/test_result.txt)
 
 
 ### Sample testing using browser
