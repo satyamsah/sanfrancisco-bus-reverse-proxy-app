@@ -31,12 +31,12 @@ This is a test.sh file which calls different curl command against server proxy e
 `chmod 777 test.sh`
 `./test.sh`
 
-The sample result of tag can be found in the file[test_result.txt)](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/test_result.txt)
+The sample result of tag can be found in the file [test_result.txt)](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/test_result.txt)
 
 
-#### Sample testing using browser
+### Sample testing using browser
 
-###### Sample List the stats:
+#### Sample List the stats:
 
 It will  have a response in json string in the browser.The last float number in the endpoint uri is the threshold value of https response-delay in terms of seconds. So, because of this, the result will only have those endpoints under "slow_requests:" key whose reponse time is greater than the threshold seconds:
 
@@ -48,12 +48,12 @@ http://localhost:5002/app/stats/thresholdtime/.0002
 
 Sample result [stats_response.txt](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/stats_response.txt)
 
-###### Sample reponse of routeList where acency tag is 'actransit' :
+#### Sample reponse of routeList where acency tag is 'actransit' :
 
 http://localhost:5002/app/routeList/agencytag/actransit
 
 
-##### Http calls to server (Not a part of execution) and concept of cache:
+### Http calls to server (Not a part of execution) and concept of cache:
 
 As shown in the diagram ,for the first time just after the service has started up, http call wont be using the cache. After that, if the user hits exactly same uri with same values, within 40 secs, the reponse would be fetched from 'Local SQLLite DB'.After 40 seconds, the http request will call the server over the wire. It is very obvious that the cache has made the retrival of information massively fast. The time out of the cache is 40 seconds.
 
