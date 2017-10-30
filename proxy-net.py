@@ -329,7 +329,7 @@ def getStats(threshold_time):
        if hits!=0:
            finalHitDict[endpoint]=hits
            if requestime.get(endpoint)>float(threshold_time):
-               finalSlowReq[endpoint]=float(str(round(requestime.get(endpoint), 4)))
+               finalSlowReq[endpoint]=str(float(str(round(requestime.get(endpoint), 4))))+"s"
 
     strFinalHitDict=json.dumps(finalHitDict)
     strFinalSlowReq=json.dumps(finalSlowReq)
