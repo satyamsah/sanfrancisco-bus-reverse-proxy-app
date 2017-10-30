@@ -2,7 +2,22 @@
 
 ![alt text](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/workflowdia.png)
 
-clone the repo:
+
+I have a reverse proxy service that is a python file " proxy-net.py " which does all the heavy lifting tasks like taking request from custom uris and proxying the requests to either a cache db or to the remote sf-bus server. The docker-compose has been used to run the whole proxy service. You can use build.sh as an alternative approach to run the service. The test.sh is used to test the endpoints.
+
+The technology used are :
+
+python and related libraries: reverse-proxy service
+
+sqlite db : cache
+
+dockerfile and docker-compose : to start the reverse-proxy service
+
+shell scripts : to start and test the service
+
+
+
+#### clone the repo:
 
 `git clone https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app.git`
 
@@ -55,9 +70,9 @@ Sample result [stats_response.txt](https://github.com/satyamsah/sanfrancisco-bus
 http://localhost:5002/app/routeList/agencytag/actransit
 
 
-### Http calls to server and concept of cache using SQLLite DB:
+### Http calls to server and concept of cache using SQLite DB:
 
-As shown in the diagram ,for the first time just after the service has started up, http call wont be using the cache. After that, if the user hits exactly same uri with same values, within 40 secs, the reponse would be fetched from 'Local SQLLite DB'.After 40 seconds, the http request will call the server over the wire. It is very obvious that the cache has made the retrival of information massively fast. It usually takes .20 to .5 seconds to get a response from http calls to enpoint server, but it averagely takes less than .0022 to .0045 seconds to fetch the saved response from the 'SQLLite cache db'. The time-out of the cache is 40 seconds and then the request would be sent to the nextbus server. 
+As shown in the diagram ,for the first time just after the service has started up, http call wont be using the cache. After that, if the user hits exactly same uri with same values, within 40 secs, the reponse would be fetched from 'Local SQLite DB'.After 40 seconds, the http request will call the server over the wire. It is very obvious that the cache has made the retrival of information massively fast. It usually takes .20 to .5 seconds to get a response from http calls to enpoint server, but it averagely takes less than .0022 to .0045 seconds to fetch the saved response from the 'SQLite cache db'. The time-out of the cache is 40 seconds and then the request would be sent to the nextbus server. 
 
 
 
