@@ -38,7 +38,11 @@ keep the terminal open to see the log
 ##### 2) using docker-compose
 docker should be installed as a pre-requisite
 
-`sudo docker-compose up`
+`chmod 777 build-from-docker.sh`
+
+`./build-from-docker.sh`
+
+dockerfile and docker-compose commands are included in the above shell script.
 
 keep the terminal open to see the log 
 
