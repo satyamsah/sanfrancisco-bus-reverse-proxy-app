@@ -1,6 +1,6 @@
 # sanfrancisco-bus-reverse-proxy-app
 
-![alt text](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/workflowdia.png)
+![alt text](https://github.com/satyamsah/sanfrancisco-bus-reverse-proxy-app/blob/master/wfdiagram.PNG)
 
 
 I have a reverse proxy service that is a python file " proxy-net.py " which does all the heavy lifting tasks like taking request from custom uris and proxying the requests to either a cache db or to the remote sf-bus server. The docker-compose has been used to run the whole proxy service. You can use build.sh as an alternative approach to run the service. The test.sh is used to test the endpoints.
