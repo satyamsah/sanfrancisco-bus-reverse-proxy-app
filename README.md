@@ -25,7 +25,13 @@ shell scripts : to start and test the service
 
 #### Build the project in two ways(use only one of the two steps at one time):
 
-##### 1) using build.sh
+##### 1) using docker-compose
+
+`sudo docker-compose up`
+
+keep the terminal open to see the log 
+
+##### 2) using build.sh
 
 `chmod 777 build.sh`
 
@@ -33,12 +39,6 @@ shell scripts : to start and test the service
 
 keep the terminal open to see the log 
 
-
-##### 2) using docker-compose
-
-`sudo docker-compose up`
-
-keep the terminal open to see the log 
 
 #### test the project (open a new terminal):
 
